@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Marketer's Insight Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          typography: (theme) => ({
+            DEFAULT: {
+              css: {
+                '--tw-prose-body': theme('colors.slate[300]'),
+                '--tw-prose-headings': theme('colors.white'),
+                '--tw-prose-lead': theme('colors.slate[400]'),
+                '--tw-prose-links': theme('colors.sky[400]'),
+                '--tw-prose-bold': theme('colors.white'),
+                '--tw-prose-counters': theme('colors.slate[400]'),
+                '--tw-prose-bullets': theme('colors.slate[400]'),
+                '--tw-prose-hr': theme('colors.slate[700]'),
+                '--tw-prose-quotes': theme('colors.slate[200]'),
+                '--tw-prose-quote-borders': theme('colors.slate[700]'),
+                '--tw-prose-captions': theme('colors.slate[400]'),
+                '--tw-prose-code': theme('colors.sky[300]'),
+                '--tw-prose-pre-code': theme('colors.slate[300]'),
+                '--tw-prose-pre-bg': theme('colors.slate[800]'),
+                '--tw-prose-th-borders': theme('colors.slate[600]'),
+                '--tw-prose-td-borders': theme('colors.slate[700]'),
+                '--tw-prose-invert-body': theme('colors.slate[700]'),
+                '--tw-prose-invert-headings': theme('colors.slate[900]'),
+                '--tw-prose-invert-lead': theme('colors.slate[600]'),
+                '--tw-prose-invert-links': theme('colors.sky[600]'),
+                '--tw-prose-invert-bold': theme('colors.slate[900]'),
+                '--tw-prose-invert-counters': theme('colors.slate[500]'),
+                '--tw-prose-invert-bullets': theme('colors.slate[500]'),
+                '--tw-prose-invert-hr': theme('colors.slate[200]'),
+                '--tw-prose-invert-quotes': theme('colors.slate[700]'),
+                '--tw-prose-invert-quote-borders': theme('colors.slate[200]'),
+                '--tw-prose-invert-captions': theme('colors.slate[500]'),
+                '--tw-prose-invert-code': theme('colors.sky[700]'),
+                '--tw-prose-invert-pre-code': theme('colors.slate[300]'),
+                '--tw-prose-invert-pre-bg': theme('colors.slate[800]'),
+                '--tw-prose-invert-th-borders': theme('colors.slate[300]'),
+                '--tw-prose-invert-td-borders': theme('colors.slate[200]'),
+              },
+            },
+          }),
+        },
+      },
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "rxjs": "https://aistudiocdn.com/rxjs@^7.8.2?conditions=es2015",
+    "rxjs/operators": "https://aistudiocdn.com/rxjs@^7.8.2/operators?conditions=es2015",
+    "rxjs/ajax": "https://aistudiocdn.com/rxjs@^7.8.2/ajax?conditions=es2015",
+    "rxjs/webSocket": "https://aistudiocdn.com/rxjs@^7.8.2/webSocket?conditions=es2015",
+    "rxjs/testing": "https://aistudiocdn.com/rxjs@^7.8.2/testing?conditions=es2015",
+    "rxjs/fetch": "https://aistudiocdn.com/rxjs@^7.8.2/fetch?conditions=es2015",
+    "@angular/platform-browser": "https://next.esm.sh/@angular/platform-browser@^20.3.9?external=rxjs",
+    "@angular/compiler": "https://next.esm.sh/@angular/compiler@^20.3.9?external=rxjs",
+    "@angular/router": "https://next.esm.sh/@angular/router@^20.3.9?external=rxjs",
+    "@angular/common": "https://next.esm.sh/@angular/common@^20.3.9?external=rxjs",
+    "@angular/core": "https://next.esm.sh/@angular/core@^20.3.9?external=rxjs"
+  }
+}
+</script>
+</head>
+<body class="bg-white dark:bg-slate-900 transition-colors duration-300">
+  <app-root></app-root>
+</body>
+</html>

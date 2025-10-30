@@ -1,0 +1,25 @@
+
+<div class="space-y-16">
+  <!-- Hero Section -->
+  <section class="text-center py-16">
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 dark:text-white">
+      Insights on Modern Marketing
+    </h1>
+    <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600 dark:text-slate-400">
+      Read my latest thoughts on email marketing, content strategy, and driving growth in the digital age.
+    </p>
+    <a href="#posts" class="mt-8 inline-block bg-sky-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-sky-700 transition-colors">
+      Explore Articles
+    </a>
+  </section>
+
+  <!-- Recent Blog Posts -->
+  <section id="posts">
+    <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8">Latest Posts</h2>
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      @for (post of posts(); track post.id) {
+        <app-blog-card [post]="post"></app-blog-card>
+      }
+    </div>
+  </section>
+</div>

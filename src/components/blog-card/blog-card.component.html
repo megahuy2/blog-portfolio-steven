@@ -1,0 +1,18 @@
+
+@if (post(); as p) {
+  <a [routerLink]="['/post', p.slug]" class="group block bg-white dark:bg-slate-800/50 rounded-lg shadow-md hover:shadow-xl dark:shadow-slate-900/50 transition-all duration-300 overflow-hidden">
+    <div class="relative">
+      <img [ngSrc]="p.thumbnailUrl" alt="" width="800" height="600" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+      <div class="absolute inset-0 bg-black/20"></div>
+    </div>
+    <div class="p-6">
+      <h3 class="text-xl font-bold text-slate-800 dark:text-white group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors">{{ p.title }}</h3>
+      <p class="mt-2 text-slate-600 dark:text-slate-400">{{ p.description }}</p>
+      <div class="mt-4 flex items-center text-sm text-slate-500 dark:text-slate-400">
+        <span>{{ p.date }}</span>
+        <span class="mx-2">&middot;</span>
+        <span>{{ p.readingTime }} min read</span>
+      </div>
+    </div>
+  </a>
+}
